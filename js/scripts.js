@@ -1,3 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('自己紹介サイトへようこそ！');
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
 });
