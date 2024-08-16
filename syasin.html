@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>写真</title>
+  <title>ポートフォリオサイト</title>
   <!-- reset.css ress -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <link rel="stylesheet" href="css/styles.css">
@@ -13,6 +13,7 @@
       background-color: #f0f0f0;
       padding: 20px;
       margin: 0;
+      text-align: center;
     }
 
     header {
@@ -60,6 +61,34 @@
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      /* 写真ページのテキストを左揃えにする */
+    }
+
+    .slider {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto;
+      width: 80%;
+      /* スライダーの幅を調整 */
+      text-align: center;
+    }
+
+    .slider li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .slider img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      /* 画像を中央揃え */
+      border-radius: 5px;
+      /* 画像に角丸を適用 */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      /* 画像に影を追加 */
     }
 
     footer {
@@ -75,13 +104,14 @@
 </head>
 
 <body>
+
   <header>
     <h1 class="title">ポートフォリオサイト</h1>
     <nav class="nav">
       <ul class="menu-group">
         <li><a href="index.html">ホーム</a></li>
         <li><a href="yakyuu.html">野球</a></li>
-        <li><a href="raibu.html">ライブ</a></li>
+        <li><a href="raibu.html">アーティスト</a></li>
         <li><a href="syasin.html">写真</a></li>
         <li><a href="otoiawase.html">お問い合わせ</a></li>
       </ul>
@@ -91,11 +121,28 @@
   <div class="container">
     <h2>写真のページ</h2>
     <p>ここに写真に関するコンテンツを追加します。</p>
+
+    <h2>複数画像を中央に注目させて見せる</h2>
+
+    <ul class="slider">
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg" alt=""></li>
+    </ul>
+
   </div>
 
   <footer>
     <p>&copy; 2024 ポートフォリオサイト</p>
   </footer>
+
+  <!-- JavaScriptの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>
 
 </body>
 
