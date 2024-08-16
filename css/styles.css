@@ -1,8 +1,8 @@
-/* styles.css */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
   margin: 0;
-  padding: 0;
 }
 
 header {
@@ -14,21 +14,34 @@ header {
   align-items: center;
 }
 
-nav ul {
-  list-style-type: none;
+.title {
   margin: 0;
+  font-size: 24px;
+}
+
+.nav {
+  text-align: center;
+}
+
+.menu-group {
+  list-style-type: none;
   padding: 0;
+  margin: 0;
   display: flex;
 }
 
-nav ul li {
+.menu-group li {
   margin-left: 20px;
 }
 
-nav ul li a {
+.menu-group li a {
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-group li a:hover {
+  text-decoration: underline;
 }
 
 .menu-toggle {
@@ -43,3 +56,66 @@ nav ul li a {
   margin: 5px 0;
 }
 
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+  margin-bottom: 20px;
+}
+
+.profile-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  margin-bottom: 10px;
+}
+
+.comment {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* スマホ用のスタイル */
+@media (max-width: 768px) {
+  .menu-group {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .menu-group.active {
+    display: flex;
+  }
+
+  .menu-group li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
