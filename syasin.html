@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>野球</title>
+  <title>ポートフォリオサイト</title>
   <!-- reset.css ress -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <link rel="stylesheet" href="css/styles.css">
@@ -13,88 +13,132 @@
       background-color: #f0f0f0;
       padding: 20px;
       margin: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .menu-group {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-group li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .menu-group li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .menu-group li a:hover {
+      text-decoration: underline;
     }
 
     .container {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 20px auto;
       background-color: #fff;
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left; /* 写真ページのテキストを左揃えにする */
     }
 
-    .form-group {
-      margin-bottom: 20px;
+    .slider {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto;
+      width: 80%; /* スライダーの幅を調整 */
+      text-align: center;
     }
 
-    .form-group label {
-      font-weight: bold;
+    .slider li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .slider img {
+      max-width: 100%;
+      height: auto;
       display: block;
-      margin-bottom: 5px;
-    }
-
-    .form-group input[type="text"],
-    .form-group textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      font-size: 16px;
-    }
-
-    .form-group textarea {
-      height: 150px;
-    }
-
-    .form-group input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .form-group input[type="submit"]:hover {
-      background-color: #45a049;
+      margin: 0 auto; /* 画像を中央揃え */
+      border-radius: 5px; /* 画像に角丸を適用 */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* 画像に影を追加 */
     }
 
     footer {
-      margin-top: 20px;
       text-align: center;
       padding: 10px;
       background-color: #333;
       color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1 class="title">ポートフォリオサイト</h1>
-    <nav class="nav">
-      <ul class="menu-group">
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="yakyuu.html">野球</a></li>
-        <li><a href="raibu.html">アーティスト</a></li>
-        <li><a href="syasin.html">写真</a></li>
-        <li><a href="otoiawase.html">お問い合わせ</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <div class="container">
-    <h2>写真のページ</h2>
-    <img src="IMG_1887.JPG" alt="食べ物" style="width:50%; height:auto;">
-  </div>
-  
+<header>
+  <h1 class="title">ポートフォリオサイト</h1>
+  <nav class="nav">
+    <ul class="menu-group">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="yakyuu.html">野球</a></li>
+      <li><a href="raibu.html">ライブ</a></li>
+      <li><a href="syasin.html">写真</a></li>
+      <li><a href="otoiawase.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <footer>
-    <p>&copy; 2024 ポートフォリオサイト</p>
-  </footer>
+<div class="container">
+  <h2>写真のページ</h2>
+  <p>ここに写真に関するコンテンツを追加します。</p>
+
+  <h2>複数画像を中央に注目させて見せる</h2>
+
+  <ul class="slider">
+    <li><img src="IMG_1887.JPG" alt="食べ物" style="width:100%; height:auto;"></li>
+    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg" alt=""></li>
+    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg" alt=""></li>
+    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg" alt=""></li>
+    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg" alt=""></li>
+    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg" alt=""></li>
+  </ul>
+
+  <p>使用したライブラリ：<a href="https://kenwheeler.github.io/slick/" target="_blank">https://kenwheeler.github.io/slick/</a></p>
+</div>
+
+<footer>
+  <p>&copy; 2024 ポートフォリオサイト</p>
+</footer>
+
+<!-- JavaScriptの読み込み -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>
 
 </body>
 
