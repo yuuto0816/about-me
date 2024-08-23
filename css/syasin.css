@@ -89,6 +89,8 @@ body {
     margin: 0 auto; /* 画像を中央揃え */
     border-radius: 5px; /* 画像に角丸を適用 */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* 画像に影を追加 */
+    max-height: 60vh;
+    object-fit: cover;
   }
   
   footer {
