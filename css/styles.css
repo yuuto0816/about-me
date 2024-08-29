@@ -148,3 +148,36 @@ footer {
     display: block;
   }
 }
+
+.rounded-icon {
+  width: 50px;  /* アイコンの幅 */
+  height: 50px; /* アイコンの高さ */
+  border-radius: 300%; /* 丸く切り取る */
+  object-fit: cover; /* アイコン全体を表示 */
+  margin-top: 10px; /* 上に少しスペースを追加 */
+}
+
+.instagram-container {
+  display: flex;
+  align-items: center; /* 垂直方向に中央揃え */
+}
+
+.instagram-container img {
+  margin-right: 10px; /* 画像とテキストの間にスペースを追加 */
+}
+
+.instagram-text-container {
+  display: flex;
+  flex-direction: column; /* テキストを縦に並べる */
+}
+
+.instagram-text {
+  font-size: 16px; /* テキストのサイズを調整 */
+  color: #333; /* テキストの色を調整 */
+}
+
+.instagram-subtext {
+  font-size: 12px; /* 小さなテキストのサイズを調整 */
+  color: #666; /* 小さなテキストの色を調整 */
+  margin-top: 5px; /* 上に少しスペースを追加 */
+}
